@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 
 using R5T.Findhorn;
 using R5T.Lombardy;
-using R5T.Zografou;
+using R5T.Zografou;using R5T.T0064;
 
 
 namespace R5T.Glenrothes.Findhorn
-{
-    public class DataDirectoryTestingDataDirectoryPathProvider : ITestingDataDirectoryPathProvider
+{[ServiceImplementationMarker]
+    public class DataDirectoryTestingDataDirectoryPathProvider : ITestingDataDirectoryPathProvider,IServiceImplementation
     {
         private IDataDirectoryPathProvider DataDirectoryPathProvider { get; }
         private ITestingDataDirectoryNameConvention TestingDataDirectoryNameConvention { get; }
